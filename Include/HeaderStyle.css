@@ -9,37 +9,17 @@ a:active { text-decoration: none; }
 
 li{
 
-    font-size:  45px;
+    font-size:  25px;
 }
 
-.navigationBar {
-    
-       background-color: #A4D8CC;
-       display: flex;
-       flex-wrap: wrap;
-       height: 123px;
-       
-       justify-content: space-around;
-   }
-   
-.navItem1{
-    width: 60px;
-    height: 60px;
-    }
+.logo{
+    width: 30px;
+    height: 30px;
+}
 
 
-.navItem1 img{
-    max-width: 100%;
-    max-height: 100%;
-   }
 
-.Menu:link { text-decoration: none; }
 
-.Menu:visited { text-decoration: none; }
-
-.Menu:hover { text-decoration: none; }
-
-.Menu:active { text-decoration: none; }
 
 @media (max-width: 420px) {
  }
