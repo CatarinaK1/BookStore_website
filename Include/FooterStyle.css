@@ -1,23 +1,37 @@
-a:link { text-decoration: none; }
+.Links a:link { text-decoration: none; }
 
-a:visited { text-decoration: none; }
+.Links a:visited { text-decoration: none; }
 
-a:hover { color: #fd0000; }
+.Links a:hover { color: #fd0000; }
 
-a:active { text-decoration: none; }
+.Links a:active { text-decoration: none; }
 
 .Footer{
     background-color: #003049;
     color: #fff;
-    padding: 20px;
-    padding-top: 50px;
+    /* padding: 20px;
+    padding-top: 50px; */
+    /* margin-bottom: 20px; */
 }
 
-.emailLink{
+#wrapper{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    padding-top: 50px; 
+
+  }
+.Links{
     color: #fff;
     display: flex;
     margin-left: auto;
+    margin-top: 10px;
 
+}
+.Links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
 }
 
 ul {
@@ -27,7 +41,7 @@ ul {
     margin-left: auto;
 }
 
-li {
+.Information {
     margin-left: 50px; /*Adjusted the left margin for nav li to create space between menu items. */
     list-style-type: none;
 }
@@ -36,7 +50,4 @@ li {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-
-
-
 }

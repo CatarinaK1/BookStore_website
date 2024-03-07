@@ -14,14 +14,14 @@ body{
 
 li{
 
-    font-size:  25px;
+    font-size:  24px;
 }
 
 
 .Menu {
     background-color: #ffffff;
     color: #000000;
-    padding: 20px;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -30,7 +30,7 @@ li{
 
 .logo-container {
     margin-right: auto; /* Move the logo container to the right */
-    font-size:  30px;
+    font-size:  28px;
     font-weight: bold;
     display: flex;
     align-items: center;

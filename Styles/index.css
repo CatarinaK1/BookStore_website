@@ -1,9 +1,71 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(190, 190, 190);
+    background-color: #f0f0f0;
 }
-/* section{
-    height: 3000px;
-} */
+section{
+    height: 300px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
 
+}
+/* 3500x1396 */
+.HeaderImage{
+    width: 90%;
+    /* height: 80%; */
+    /* width: 1500px; */
+    height:30%;
+    /* zoom: 320%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+.HeaderImage::after {
+    content: ""; /* Create an empty content pseudo-element */
+    position: absolute;
+    bottom: 105px;
+    width: 90%;
+    height: 30px; /* Adjust the height of the red rectangle as needed */
+    background-color: #DA0C0C; /* Red color */
+    z-index: -1; /* Place it behind the content */
+}
+
+
+
+.AboutGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.About{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.DrawingReading{
+    justify-content: center;
+
+}
+.About h2{
+    height: 80%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+
+.About p{
+    /* display: flex;
+    justify-content: flex-end; */
+    align-items: center;
+
+
+}
