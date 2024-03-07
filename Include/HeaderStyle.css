@@ -1,23 +1,72 @@
 
-a:link { text-decoration: none; }
+nav a:link { text-decoration: none; }
 
-a:visited { text-decoration: none; }
+nav a:visited { text-decoration: none; }
 
-a:hover { text-decoration: none; }
+nav a:hover { color: #fd0000; }
 
-a:active { text-decoration: none; }
+nav a:active { text-decoration: none; }
+
+body{
+    margin: 0;
+    padding: 0;
+}
 
 li{
 
     font-size:  25px;
 }
 
-.logo{
-    width: 30px;
-    height: 30px;
+
+.Menu {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 
+.logo-container {
+    margin-right: auto; /* Move the logo container to the right */
+    font-size:  30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    /* margin-right: 10px; */
+
+}
+.store-name{
+    margin-left: 10px;
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+nav li {
+    margin-left: 50px; /*Adjusted the left margin for nav li to create space between menu items. */
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
 
 
 

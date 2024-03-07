@@ -1,0 +1,42 @@
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { color: #fd0000; }
+
+a:active { text-decoration: none; }
+
+.Footer{
+    background-color: #003049;
+    color: #fff;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.emailLink{
+    color: #fff;
+    display: flex;
+    margin-left: auto;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+li {
+    margin-left: 50px; /*Adjusted the left margin for nav li to create space between menu items. */
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+
+
+
+}

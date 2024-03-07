@@ -15,3 +15,19 @@ $(document).ready(function() {
         }).appendTo('body');
     });
 });
+
+$(document).ready(function() {
+    // Load the HTML content from Footer.html
+    $.get('./Include/Footer.html', function(data) {
+        // Append the HTML content to the element with id 'universalFooter'
+        $('#universalFooter').html(data);
+
+        // Load the CSS styles from FooterStyle.css
+        $('<link>', {
+            rel: 'stylesheet',
+            type: 'text/css',
+            href: './Include/FooterStyle.css'
+        }).appendTo('body');
+    });
+});
+
