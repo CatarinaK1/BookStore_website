@@ -31,8 +31,8 @@ li {
     margin-left: 50px; /*Adjusted the left margin for nav li to create space between menu items. */
     list-style-type: none;
 }
-
-a {
+/* Careful with header links */
+.emailLink a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
