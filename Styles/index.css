@@ -4,7 +4,7 @@ body{
     background-color: #f0f0f0;
 }
 section{
-    height: 300px;
+    height: 400px;
     display: grid;
     place-items: center;
     align-content: center;
@@ -25,8 +25,20 @@ section{
     margin: 0 auto;
     margin-bottom: 0px;
 }
-.HeaderImage::after {
+/* .HeaderImage::after {
     content: ""; /* Create an empty content pseudo-element */
+    /* position: absolute;
+    bottom: 105px;
+    width: 90%;
+    height: 30px; /* Adjust the height of the red rectangle as needed */
+    /* background-color: #DA0C0C; Red color */
+    /* z-index: -1; /* Place it behind the content */
+/* }  */ 
+
+
+
+
+.decorative-rectangle {
     position: absolute;
     bottom: 105px;
     width: 90%;
@@ -35,37 +47,69 @@ section{
     z-index: -1; /* Place it behind the content */
 }
 
+.about-decorative-rectangle {
+    position: initial;
+    width: 90%;
+    height: 5px; /* Adjust the height of the red rectangle as needed */
+    background-color: #DA0C0C; /* Red color */
+    z-index: -1; /* Place it behind the content */
+}
+
+
+.AboutSection{
+    /* height: 600px;  */
+    height: auto; /*Set to auto to allow the section to adjust based on content */
+    padding: 20px; /* Add padding for better spacing */
+    /* max-height: 400px; Set a specific maximum height */
+    overflow: hidden; /* Hide content overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    margin-top: 90px;
+}
 
 
 .AboutGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: auto auto;/* Adjust the gap between elements */
+    gap: 0px; /* Adjust the gap between elements */
+    grid-template-columns: 1fr 1fr; /* Equal width columns */
+ 
+    max-width: 1200px; /* Adjust the maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+    /* max-height: 250px; */
+
 }
 .About{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    max-width: 800px;
+
 
 
 }
 
 .DrawingReading{
-    justify-content: center;
+    /* justify-content: center; */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
 
 }
-.About h2{
-    height: 80%;
+/* .About h2{
+    height: 80%; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
 
 
-}
+/* } */
 
-.About p{
-    /* display: flex;
-    justify-content: flex-end; */
-    align-items: center;
+.About p{ 
+    font-size: 20px;
+    margin-bottom: 10px;
 
 
 }
