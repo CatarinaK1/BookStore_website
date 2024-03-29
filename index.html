@@ -6,7 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="./Styles/index.css">
    <link rel="stylesheet" href="./Include/HeaderStyle.css">
@@ -26,48 +26,142 @@
     <!-- Header content goes here -->
     <header id="universalHeader"></header>
     
-    <section class = "HeaderImage">
+    <section class = "headerImageSection">
         <img class="HeaderImage" alt="HeaderImage" src="./Include/Reading.jpg">  
+        <!-- <div class="decorative-rectangle"></div> -->
     </section>
 
-    <section>
+    <section class = "CollectionSection">
+        <div class = "Collection">
+            <div class="CollectionImage-Container">
+                <img alt="CollectionBooksImage" id="CollectionBooksImage" src="./Include/BannerBookCollection.png"> 
+            </div>
+            <div class="CollectionText-Container">
+                <h2>Our Collection</h2>
+                <!-- <p>Explore the literary wonders awaiting you in our collection.
+                Embark on a journey through the captivating pages of our book selection.
+                Embark on a literary journey  -->
+                <p> Explore the treasures within the pages of our diverse book collection.
+                </p>
+                <button>Collection</button>
+            </div>
+
+      </div>
+    </section>
+    <section class="AboutSection">
+        <div class="AboutGrid">
+            <div class = "About">
+                <h2>Nurturing Minds, One Book at a Time</h2>
+                <!-- <div class="about-decorative-rectangle"></div> -->
+                <p>Welcome to our Bookstore, we are on a mission to cultivate a love for literature, ignite cultural curiosity, 
+                    and inspire a lifelong passion for reading.</p>
+                    <p> With a curated selection of books spanning genres, we strive to create a haven for book lovers and foster a community dedicated 
+                    to the enriching experience of literature. 
+                    Join us on our literary journey as we celebrate the written word and its power to inspire, entertain, and connect us all.
+                    </p>
+            </div>
+            <div class="DrawingReading">
+                <img alt="DrawingReading" src="./Include/StudentStudying.png">  
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="AboutSection">
         <div class="AboutGrid">
             <div class="DrawingReading">
                 <img alt="DrawingReading" src="./Include/StudentStudying.png">  
             </div>
             <div class = "About">
                 <h2>Nurturing Minds, One Book at a Time</h2>
-                <p>Welcome to [Your Bookstore Name], e are on a mission to cultivate a love for literature, ignite cultural curiosity, and inspire a lifelong passion for reading.
-                    With a curated selection of books spanning genres, we strive to create a haven for book lovers and foster a community dedicated 
+                <div class="about-decorative-rectangle"></div>
+                <p>Welcome to our Bookstore, we are on a mission to cultivate a love for literature, ignite cultural curiosity, 
+                    and inspire a lifelong passion for reading.</p>
+                    <p> With a curated selection of books spanning genres, we strive to create a haven for book lovers and foster a community dedicated 
                     to the enriching experience of literature. 
                     Join us on our literary journey as we celebrate the written word and its power to inspire, entertain, and connect us all.
                     </p>
             </div>
         </div>
+    </section> -->
+
+
+    <section class = "Top-picks-Section">
+        <div class="Top-picks-text">
+            <h2>This Month's Top Picks</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi </p>
+        </div>
+
+        <div class="Top-picks-books">
+            <div class="book">
+                <img src="./Include/book1.jpg" alt="Book1">
+                <h3>Lord of the Rings</h3>
+                <p>J.R.R Tolkien</p>
+ 
+            </div>
+            
+            <div class="book">
+                <img src="./Include/book11.jpg" alt="Book2">
+                <h3>The Adventures of the Blue Carbuncle</h3>
+                <p>Arthur Conan Doyle</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book3.jpg" alt="Book3">
+                <h3>Learn openGL - Graphics Programming</h3>
+                <p>Joey de Vries</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book18.jpg" alt="Book4">
+                <h3>Remembrance of Things Past</h3>
+                <p>Marcel Proust</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book7.jpg" alt="Book5">
+                <h3>The Phantom of the Opera</h3>
+                <p>Gaton Leroux</p>
+            </div>
+        </div>
+
+
+
+        </div>
     </section>
 
-    <section class = "Collection">
-        <h2>Title</h2>
-        <p>Ipsa minus blanditiis fugiat laborum neque. Iusto, fugit modi. Velit nesciunt eos commodi 
-        perferendis accusantium, ipsam dolorem eius, voluptatum officia consequuntur laudantium minima dignissimos consequatur cumque doloremque non unde laboriosam?</p>
+    <section class="Visit-us-Section">
+        <div class="bookstore-visit-text">
+            <h2>Visit us at</h2>
+            <p> Cougar Street 25B <br>
+                Helsinki 002200 <br>
+                Open : Ma - La 9-20.
+            </p>
+            <button>Contact</button>
+            
+        </div>
+        <div class="bookstore-visit-image">
+            <img src="./Include/bookstoreInterior.jpg" alt="BookstoreInterior">
+        </div>
     </section>
+    
 
-    <section class = "Top picks">
-        <h2>Title</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi 
-        ipsam ab impedit sit ut? Dolore doloremque similique molestias magnam ducimus et impedit rem repellendus libero. Voluptas, numquam.</p>
-    </section>
+    <section class = "Contact-Us">
+        <div class="Contact-Us-Grid">
+            <div class = "Contact-text">
+                <h2>Contact Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam urna purus <br>
+                    ornare vitae blandit vitae, tincidunt vitae leo.
+                </p>
+            </div>
+            <div class="Contact-Grid-Image">
+                <img alt="Contact-Image" src="./Include/Online-Conversation.png">  
+            </div>
+        </div>
 
-    <section class = "Visit us">
-        <h2>Title</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi 
-        ipsam ab impedit sit ut? Dolore doloremque similique molestias magnam ducimus et impedit rem repellendus libero. Voluptas, numquam.</p>
-    </section>
-
-    <section class = "Contact Us">
-        <h2>Title</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi 
-        ipsam ab impedit sit ut? Dolore doloremque similique molestias magnam ducimus et impedit rem repellendus libero. Voluptas, numquam.</p>
+        <button>Contact</button>
     </section>
 
 
