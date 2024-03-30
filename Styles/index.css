@@ -120,7 +120,7 @@ section{
 
 }
 .About h2 {
-    font-size: 34px;
+    font-size: 44px;
     border-bottom: 4px solid  #DA0C0C;
   }
   
@@ -208,7 +208,7 @@ section{
 
 /* Add styling for text and button as needed */
 .Collection h2 {
-    font-size: 24px;
+    font-size: 44px;
     margin-bottom: 10px;
     margin-top: 0px;
     border-bottom: 4px solid red;
@@ -254,7 +254,7 @@ section{
 }
 
 .Top-picks-text h2{
-    font-size: 34px;
+    font-size: 44px;
     border-bottom: 4px solid red;
 
 }
@@ -318,7 +318,7 @@ section{
 }
 .bookstore-visit-text h2 {
 
-    font-size: 34px;
+    font-size: 44px;
     border-bottom: 4px solid red;
 
 }
@@ -326,6 +326,7 @@ section{
 
     margin-bottom: 10px;
     line-height: 50px;
+    font-size: 18px;
 }
 
 .bookstore-visit-image img {
@@ -347,3 +348,78 @@ section{
     font-size: 18px;
     margin-top: 0px;
 } 
+
+
+
+
+.Contact-Us-Section{
+    /* height: 600px;  */
+    height: auto; /*Set to auto to allow the section to adjust based on content */
+    padding: 5px; /* Add padding for better spacing */
+    /* max-height: 400px; Set a specific maximum height */
+    overflow: hidden; /* Hide content overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    margin-top: 30px;
+    height: 550px;
+}
+
+
+.Contact-Us-Grid{
+
+    display: flex;
+    /*flex-direction: row-reverse; /* Reverse the order of items */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    max-width: 1200px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    gap: 100px;
+
+}
+.Contact-text{
+    display: flex;
+    /* justify-content: flex-end; */
+    /* justify-content: flex-end; */
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* max-width: 800px; */
+    max-width: 50%;
+    height: 400px;
+
+
+
+}
+.Contact-text h2 {
+    font-size: 44px;
+    border-bottom: 4px solid  #DA0C0C;
+  
+}
+.Contact-text p{ 
+    font-size: 18px;
+    margin-bottom: 100px;
+
+
+}
+.Contact-text button {
+    background-color: #DA0C0C;
+    color: #f0f0f0;
+    padding: 8px 80px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 0px;
+} 
+  
+.Contact-Grid-Image{
+    /* justify-content: center; */
+    max-width: 50%;
+    height: auto;
+    /* margin-bottom: 20px;  */
+    /* margin-right: 100px;  */
+    margin-left: 50px;
+
+}
+
