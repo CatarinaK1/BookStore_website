@@ -7,30 +7,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/contact.css">
     <link rel="stylesheet" href="./Include/HeaderStyle.css">
     <!-- Add this line to include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  
     <script src="./Include/include.js"></script>
  
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
     <header id="universalHeader"></header>
+    <section class="headerImageSection">
+        <img class="HeaderImage" alt="HeaderImage" src="./Include/bookshelf.jpg">  
+    </section>
+    <div class="PageTitle">
+        <h2>Contact Form</h2>
+    </div>
     
-    <section class = "Header Image">
 
+    <section class="container">
+        <div class="DrawingReading">
+            <div class="bookstore-contact-text">
+                <h2>Contact Information</h2>
+
+                <h3>Address</h3>
+                <p> Cougar Street 25B <br>
+                    Helsinki 002200 <br>
+                    Open : Ma - La 9-20.
+                </p>
+                <h3>Address</h3>
+                <p> (+358)08080845 <br>
+                    support@bookstore.com <br>
+
+                </p>
+            </div>
+            <img alt="DrawingReading" src="./Include/Feedback.png">  
+        </div>
+        <div class="formContainer blueBackground">
+            <form action="/action_page.php">
+                <div class="PersonalInfo">
+                    <h2>Personal details</h2>
+                    <div class="row">
+                        
+                        <div class="column">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                        <div class="column">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email..">
+                        </div>
+                        <div class="column">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                        </div>
+                    </div>
+                </div>
+                <h2>More Information</h2>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </section>
-    <section class = "About">
-        <h2>Title</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi 
-        ipsam ab impedit sit ut? Dolore doloremque similique molestias magnam ducimus et impedit rem repellendus libero. Voluptas, numquam.</p>
-    </section>
-
-
 
     <footer id="universalFooter"></footer>
-    
 </body>
+
 </html>

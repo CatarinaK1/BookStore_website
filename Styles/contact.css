@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.headerImageSection {
+    /* Remove the styles for section and apply them only to the headerImageSection */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    border-bottom: 20px solid #DA0C0C; /* Add solid red border to the bottom of the section */
+}
+
+.bookstore-contact-text{
+    background-color: #F9F3E7;
+    border-radius: 10px;
+}
+.PageTitle{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the section horizontally */
+    font-size: 34px;
+
+}
+.HeaderImage {
+    width: 90%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    /* Other styles for the header image */
+}
+
+
+/* input[type=submit]:hover {
+  background-color: #45a049;
+} */
+.formContainer h2{
+    border-bottom: 4px solid red;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+input[type=submit] {
+    background-color: #DA0C0C;
+    color: #f0f0f0;
+    padding: 8px 80px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin: auto; /* Center horizontally */
+  
+  }
+.blueBackground {
+    background-color: #82c2c270;
+    padding: 20px; /* Add padding for better appearance */
+    border-radius: 30px;
+}
+
+.DrawingReading img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formContainer {
+    margin-left: 20px; /* Adjust spacing between image and form */
+}
+
+.PersonalInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px; /* Adjust spacing between rows */
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px; /* Adjust spacing between columns */
+}
+
+label {
+    margin-bottom: 5px; /* Adjust spacing between label and input */
+}

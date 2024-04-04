@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+section{
+    /* height: 400px; */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+
+}
+
+.headerImageSection {
+    /* Remove the styles for section and apply them only to the headerImageSection */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    border-bottom: 20px solid #DA0C0C; /* Add solid red border to the bottom of the section */
+}
+
+.HeaderImage {
+    width: 90%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    /* Other styles for the header image */
+}
+
+
+
+.AboutSection{
+    /* height: 600px;  */
+    height: auto; /*Set to auto to allow the section to adjust based on content */
+    padding: 5px; /* Add padding for better spacing */
+    /* max-height: 400px; Set a specific maximum height */
+    overflow: hidden; /* Hide content overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    margin-top: 30px;
+}
+
+
+.AboutGrid{
+   /* display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+   /* grid-template-columns: auto auto;/* Adjust the gap between elements */
+   /* gap: 0px; /* Adjust the gap between elements */
+   /* grid-template-columns: 1fr 1fr; /* Equal width columns */
+ 
+   /* max-width: 1200px; /* Adjust the maximum width of the grid container */
+    /*margin: 0 auto; /* Center the grid container */
+    /* max-height: 250px; */
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    background-color: #92dbdd70;
+    display: flex;
+    /*flex-direction: row-reverse; /* Reverse the order of items */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    max-width: 1200px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+
+}
+.About{
+    display: flex;
+    
+    /* justify-content: flex-end; */
+    /* justify-content: flex-end; */
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* max-width: 800px; */
+    max-width: 50%;
+
+
+
+}
+.About h2 {
+    font-size: 44px;
+    border-bottom: 4px solid  #DA0C0C;
+  }
+  
+.ProgrammerStudying{
+    /* justify-content: center; */
+    max-width: 50%;
+    height: auto;
+    /* margin-bottom: 20px;  */
+    /* margin-right: 100px;  */
+    margin-left: 50px;
+
+}
+
+.About p{ 
+    font-size: 18px;
+    margin-bottom: 10px;
+
+
+}
+
+.CollectionSection {
+    max-width: 1200px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.CollectionGenre-Container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 80px; /* Add gap between columns */
+    /* background-color: #f2f2ff;; */
+    /* width: 1200px; */
+    width: 100%;
+    height: 180px;
+}
+
+.Genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Genre img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 30px; /* Add some space between the image and the button */
+}
+
+
+.CollectionText-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Align text to center */
+    height: 100%; /* Ensure the container takes up the full height of its parent */
+}
+
+
+.CollectionImage-Container {
+    width: 40%; /* Take full width of its container */
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+
+
+/* Add styling for text and button as needed */
+.Collection h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-bottom: 4px solid red;
+}
+
+
+.Collection p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.Collection button {
+    background-color: #DA0C0C;
+    color: #f0f0f0;
+    padding: 8px 45px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin-top: 0px;
+} 
+
+
+.Top-picks-Section{
+    max-width: 1200px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin-bottom: 150px;
+
+}
+
+.Top-picks-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically */
+    align-items: center; /* Align content horizontally */
+    height: 100%; /* Ensure the div takes up the full height */
+
+}
+
+.Top-picks-text h2{
+    font-size: 44px;
+    /* border-bottom: 4px solid red; */
+
+}
+.Top-picks-title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px; /* Add gap between columns */
+    /* width: 1200px; */
+
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+.about-decorative-rectangle {
+
+    width: 290px;
+    height: 5px; /* Adjust the height of the red rectangle as needed */
+    background-color: #DA0C0C; /* Red color */
+
+}
+
+.Top-picks-text{
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}
+
+.Top-picks-books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* Add gap between columns */
+}
+
+.book {
+    text-align: center; /* Center-align content */
+}
+
+
+.book img {
+    /*! width: 100%; */ /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 250px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin-right:10px;
+}
+
+/* Optional: Adjust styles for h3 and p tags */
+.book h3 {
+    margin: 20px 0; /* Adjust margin as needed */
+    
+}
+
+.book p {
+    /*font-weight: bold; /* Make price text bold */
+    font-weight: normal;
+}
+
+
+.Top-picks-books-button {
+
+    margin-top: 50px;
+} 
+.Top-picks-books-button button{
+    background-color: #DA0C0C;
+    color: #f0f0f0;
+    padding: 8px 45px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin-top: 0px;
+} 
+
+.Top-picks-books-button a{
+
+    color: #000000;
+    font-size: 20px;
+    margin-right: 20px;
+} 

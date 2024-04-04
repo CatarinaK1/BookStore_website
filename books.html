@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/books.css">
     <link rel="stylesheet" href="./Include/HeaderStyle.css">
+
     <!-- Add this line to include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  
     <script src="./Include/include.js"></script>
  
-    <title>Document</title>
+    <title>Books</title>
 </head>
 <body>
     <header id="universalHeader"></header>
@@ -27,35 +28,51 @@
 
     <section class = "CollectionSection">
         <div class = "Collection">
-            <div class="CollectionImage-Container">
-                <img alt="CollectionBooksImage" id="CollectionBooksImage" src="./Include/BannerBookCollection.png"> 
-            </div>
+
             <div class="CollectionText-Container">
-                <h2>Our Collection</h2>
-                <!-- <p>Explore the literary wonders awaiting you in our collection.
-                Embark on a journey through the captivating pages of our book selection.
-                Embark on a literary journey  -->
+                <h2>Our Genres</h2>
+
                 <p> Explore the treasures within the pages of our diverse book collection.
                 </p>
-                <button>Collection</button>
+            </div>
+            <div class="CollectionGenre-Container">
+
+                    <div class="Genre">
+                        <img alt="CollectionBookGenreFiction" id="CollectionBookGenreFiction" src="./Include/Group13.png"> 
+                        <button>Fiction</button>
+                </div>
+                <div class="Genre">
+                    <img alt="CollectionBookGenreHistory" id="CollectionBookGenreHistory" src="./Include/Ellipse2.png"> 
+                    <button>History</button>
+                </div>
+                <div class="Genre">
+                    <img alt="CollectionBookGenreArt" id="CollectionBookGenreArt" src="./Include/Ellipse3.png"> 
+                    <button>Art</button>
+                </div>
+                <div class="Genre">
+                 <img alt="CollectionBookGenreBiography" id="CollectionBookGenreBiography" src="./Include/Ellipse4.png"> 
+                    <button>Biography</button>
+                </div>
+                <div class="Genre">
+                    <img alt="CollectionBookGenreRomance" id="CollectionBookGenreRomance" src="./Include/Ellipse5.png"> 
+                    <button>Romance</button>
+                </div>
+                
             </div>
 
-      </div>
+      
     </section>
     <section class="AboutSection">
         <div class="AboutGrid">
             <div class = "About">
-                <h2>Nurturing Minds, One Book at a Time</h2>
+                <h2>Mitä suomalaiset lukevat?</h2>
                 <!-- <div class="about-decorative-rectangle"></div> -->
-                <p>Welcome to our Bookstore, we are on a mission to cultivate a love for literature, ignite cultural curiosity, 
-                    and inspire a lifelong passion for reading.</p>
-                    <p> With a curated selection of books spanning genres, we strive to create a haven for book lovers and foster a community dedicated 
-                    to the enriching experience of literature. 
-                    Join us on our literary journey as we celebrate the written word and its power to inspire, entertain, and connect us all.
+                <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
+                    <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
                     </p>
             </div>
-            <div class="DrawingReading">
-                <img alt="DrawingReading" src="./Include/StudentStudying.png">  
+            <div class="ProgrammerStudying">
+                <img alt="ProgrammerStudying" src="./Include/coder.png">  
             </div>
         </div>
     </section>
@@ -64,7 +81,11 @@
 
     <section class = "Top-picks-Section">
         <div class="Top-picks-text">
-            <h2>This Month's Top Picks</h2>
+            <div class="Top-picks-title">
+                <div class="about-decorative-rectangle"></div>
+                <h2>Top Fiction</h2>
+                <div class="about-decorative-rectangle"></div>
+            </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi </p>
         </div>
 
@@ -83,26 +104,109 @@
             </div>
 
             <div class="book">
-                <img src="./Include/book3.jpg" alt="Book3">
-                <h3>Learn openGL - Graphics Programming</h3>
-                <p>Joey de Vries</p>
+                <img src="./Include/book4.jpg" alt="Book3">
+                <h3>The Hunger Games</h3>
+                <p>Suzanne Collins</p>
             </div>
 
             <div class="book">
-                <img src="./Include/book18.jpg" alt="Book4">
-                <h3>Remembrance of Things Past</h3>
-                <p>Marcel Proust</p>
+                <img src="./Include/book20.jpg" alt="Book4">
+                <h3>Brave New World</h3>
+                <p>Aldous Huxley</p>
             </div>
 
             <div class="book">
                 <img src="./Include/book7.jpg" alt="Book5">
                 <h3>The Phantom of the Opera</h3>
-                <p>Gaton Leroux</p>
+                <p>Gaston Leroux</p>
             </div>
         </div>
 
+        <div class="Top-picks-text">
+            <div class="Top-picks-title">
+                <div class="about-decorative-rectangle"></div>
+                <h2>Top History</h2>
+                <div class="about-decorative-rectangle"></div>
+            </div>
+            <!-- <h2>Top History</h2> -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi </p>
+        </div>
 
+        <div class="Top-picks-books">
+            <div class="book">
+                <img src="./Include/book21.jpg" alt="Book1">
+                <h3>Femina</h3>
+                <p>Janina Ramirez</p>
+ 
+            </div>
+            
+            <div class="book">
+                <img src="./Include/book22.jpg" alt="Book2">
+                <h3>The Russo-Ukrainian War</h3>
+                <p>Serhii Plokhy</p>
+            </div>
 
+            <div class="book">
+                <img src="./Include/book23.jpg" alt="Book3">
+                <h3>The Anglo-Saxons</h3>
+                <p>Marc Morris</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book24.jpg" alt="Book4">
+                <h3>The Scandalous Lady W</h3>
+                <p>Hallie Rubenhold</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book25.jpg" alt="Book5">
+                <h3>The Light of Truth</h3>
+                <p>Ida Wells</p>
+            </div>
+        </div>
+
+        <div class="Top-picks-text">
+            <div class="Top-picks-title">
+                <div class="about-decorative-rectangle"></div>
+                <h2>Top Art</h2>
+                <div class="about-decorative-rectangle"></div>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi </p>
+        </div>
+
+        <div class="Top-picks-books">
+            <div class="book">
+                <img src="./Include/book26.jpg" alt="Book1">
+                <h3>The Story of Art without Men</h3>
+                <p>Katy Hessel</p>
+ 
+            </div>
+            
+            <div class="book">
+                <img src="./Include/book27.jpg" alt="Book2">
+                <h3>The Little Book of Colour</h3>
+                <p>Karen Haller</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book28.jpg" alt="Book3">
+                <h3>Lady Sings the Blues</h3>
+                <p>Billie Holiday</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book29.jpg" alt="Book4">
+                <h3>The World According to Colour</h3>
+                <p>James Fox</p>
+            </div>
+
+            <div class="book">
+                <img src="./Include/book30.jpg" alt="Book5">
+                <h3>An Essay on Typography</h3>
+                <p>Eric Gill</p>
+            </div>
+        </div>
+        <div class="Top-picks-books-button" ><a>1 2 3</a><button>Next</button></div>
         </div>
     </section>
 
