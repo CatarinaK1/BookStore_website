@@ -1,0 +1,91 @@
+.AboutGrid{
+    display: flex;
+    /*flex-direction: row-reverse; /* Reverse the order of items */
+    
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    max-width: 1200px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    gap: 50px;
+}
+
+
+.About{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+
+}
+.About h2 {
+    font-size: 44px;
+    border-bottom: 4px solid  #DA0C0C;
+  }
+  
+.AccessibilityPeople{
+    max-width: 50%;
+    height: auto;
+    margin-left: 50px;
+
+}
+
+.About p{ 
+    font-size: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+.Text {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Text p, h2, h3{
+    text-align: center;
+    margin-top: 40px;
+}
+.Text h2{
+    border-bottom: 1px solid  #DA0C0C;
+
+}
+
+.SpecificationsList {
+    display: flex;
+    flex-direction: column; /* Align list items in a row */
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.SpecificationsList li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 20px; /* Add space between list items */
+    margin-top: 10px;
+}
+.MoreInformation {
+    margin: 0 auto; /* Center the text horizontally */
+    margin-bottom: 50px;
+   
+}
+
+.ContactInformation{
+    display: flex;
+    flex-direction: column; /* Align list items in a row */
+    align-items: center;
+
+}
+
+.ContactInformation li{
+
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 20px; /* Add space between list items */
+}

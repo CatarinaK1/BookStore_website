@@ -31,3 +31,18 @@ $(document).ready(function() {
     });
 });
 
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Tab') {
+        // Get the focused element
+        var focusedElement = document.activeElement;
+        
+        // Scroll the focused element into view
+        focusedElement.scrollIntoView({ 
+            behavior: 'smooth', // Optional: Use smooth scrolling
+            block: 'center',    // Scroll to the center of the viewport
+            inline: 'center'    // Scroll to the center horizontally
+        });
+    }
+});
+
+

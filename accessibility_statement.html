@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/accessibility.css">
     <link rel="stylesheet" href="./Include/HeaderStyle.css">
     <!-- Add this line to include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -23,17 +23,17 @@
 
     </section>
     <section class="AboutSection">
-        <div class="AboutGrid">
-            <div class="ProgrammerStudying">
-                <img alt="ProgrammerStudying" src="./Include/Disabled-Inclusive.png">  
+        <div class="AboutGrid" role="region">
+            <div class="AccessibilityPeople" role="presentation">
+                <img alt="AccessibilityPeople" src="./Include/Disabled-Inclusive.png" >  
             </div>
-            <div class = "About">
+            <div class = "About" tabindex="0">
                 
                 <h2>Accessibility statement</h2>
-                <!-- <div class="about-decorative-rectangle"></div> -->
-                <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
-                    <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
-                    </p>
+                <p> Our Bookstore is committed to ensuring digital accessibility for people with disabilities. </p>
+                <p> 
+                    We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+                </p>
             </div>
 
         </div>
@@ -41,18 +41,47 @@
 
     <section class="AboutSection">
         <div class="Text">
-            <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
-            <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
+
+        <div tabindex="0" role="region" aria-label="Website's Conformance Status">
+            <h2>Conformance Status</h2>
+            <p>
+                This website conforms to the Web Content Accessibility Guidelines (WCAG) 2.1 at the AA level, 
+                as recommended by the World Wide Web Consortium (W3C).
             </p>
-            <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
-            <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
+        </div>
+
+        <div tabindex="0" role="region" aria-label="Feedback and Contact Information">
+            <h2>Feedback</h2>
+            <p> We welcome feedback on the accessibility of our website. <br>
+                If you encounter any accessibility barriers or have suggestions for improvement, please contact us at support@bookstore.com. <br>
+                We are committed to continuously improving the accessibility of our website to ensure that all users can access and enjoy the content we provide.
             </p>
-            <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
-            <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
+            <h3 tabindex="0">Contact Information</h3>
+            <ul class="ContactInformation" role="list" tabindex="0"> 
+                <li role="listitem" tabindex="0">  Phone:  (+358)08080845 </li>
+                <li role="listitem" tabindex="0"> E-mail: support@bookstore.com</li>
+                <li role="listitem" tabindex="0"> Postal address: Cougar Street 25B </li>
+                <li role="listitem" tabindex="0"> City: Helsinki 002200</li>
+            </ul>
+        </div>
+        
+        <div tabindex="0" role="region" aria-label="Technical Specifications">
+            <h2>Technical Specifications:</h2>
+            <p> Accessibility of Bookstore.com relies on the following technologies to work with the particular combination of web browser and 
+                any assistive technologies or plugins installed on your computer:
             </p>
-            <p>Näitä kirjoja luetaan Suomessa nyt. Katso mitä kirjoja muutkin lukevat ja lue sinäkin.</p>
-            <p>  Parhaat kirjalahjat löytyvät myydyimpien kirjojen joukosta. Anna lahjaksi lukuelämys - valitse paras lahjakirja!
-            </p>
+            <ul class="SpecificationsList" role="list" tabindex="0">
+                <li role="listitem" tabindex="0"><strong>Platform:</strong> HTML5, CSS3, JavaScript</li> <br>
+                <li role="listitem" tabindex="0"><strong>Screen Reader Compatibility:</strong> Compatible with major screen readers such as JAWS, NVDA, and VoiceOver</li><br>
+                <li role="listitem" tabindex="0"><strong>Browser Compatibility:</strong> Supports the latest versions of major web browsers including Chrome, Firefox, Safari, and Edge</li><br>
+                <li role="listitem" tabindex="0"><strong>Responsive Design:</strong> Website layout adapts seamlessly to various screen sizes and devices, including desktops, tablets, and smartphones</li>
+            </ul>
+        </div>
+        <div class="MoreInformation" tabindex="0"   role="region" aria-label="More information">
+            <h2>More information</h2>
+            <p>Date of Accessibility Statement: [Insert Date]</p>
+            <p>This accessibility statement applies to Bookstore.com .</p>
+        </div>
 
         </div>
     </section>

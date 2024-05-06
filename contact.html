@@ -18,34 +18,34 @@
 </head>
 <body>
     <header id="universalHeader"></header>
-    <section class="headerImageSection">
+    <!-- <section class="headerImageSection">
         <img class="HeaderImage" alt="HeaderImage" src="./Include/bookshelf.jpg">  
-    </section>
-    <div class="PageTitle">
+    </section> -->
+    <div class="PageTitle" role="region">
         <h2>Contact Form</h2>
     </div>
     
 
     <section class="container">
         <div class="DrawingReading">
-            <div class="bookstore-contact-text">
+            <div class="bookstore-contact-text" role="region" aria-label="Bookstore contact Information" tabindex="0">
                 <h2>Contact Information</h2>
 
-                <h3>Address</h3>
+                <h3 tabindex="0">Address</h3>
                 <p> Cougar Street 25B <br>
                     Helsinki 002200 <br>
-                    Open : Ma - La 9-20.
+                    Open : Monday - Saturday 9-20.
                 </p>
-                <h3>Address</h3>
+                <h3 tabindex="0">Call Us</h3>
                 <p> (+358)08080845 <br>
                     support@bookstore.com <br>
 
                 </p>
             </div>
-            <img alt="DrawingReading" src="./Include/Feedback.png">  
+            <img alt="DrawingReading" src="./Include/Feedback.png" role="presentation">  
         </div>
-        <div class="formContainer blueBackground">
-            <form action="/action_page.php">
+        <!-- <div class="formContainer blueBackground" role="region">
+            <form action="/action_page.php" role="form">
                 <div class="PersonalInfo">
                     <h2>Personal details</h2>
                     <div class="row">
@@ -66,22 +66,67 @@
                         </div>
                         <div class="column">
                             <label for="phone">Phone Number</label>
-                            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Your phone number..">
                         </div>
                     </div>
                 </div>
                 <h2>More Information</h2>
                 <label for="country">Country</label>
                 <select id="country" name="country">
-                    <option value="australia">Australia</option>
+                    <option value="finland">Finland</option>
                     <option value="canada">Canada</option>
                     <option value="usa">USA</option>
+                    <option value="sweden">Sweden</option>
                 </select>
                 <label for="subject">Message</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                 <input type="submit" value="Submit">
             </form>
+        </div> -->
+
+        <div class="formContainer blueBackground" role="region" aria-label="Contact Us Form">
+            <form action="/action_page.php" role="form">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="PersonalInfo">
+                        <div class="row">
+                            <div class="column">
+                                <label for="fname" aria-label="First Name">First Name:</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.." aria-required="true" >
+                            </div>
+                            <div class="column">
+                                <label for="lname" aria-label="Last Name" >Last Name:</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name.." aria-required="true" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <label for="email" aria-label="Email" >Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Your email.." aria-required="true" >
+                            </div>
+                            <div class="column">
+                                <label for="phone" aria-label="Phone number" >Phone Number:</label>
+                                <input  placeholder="Your phone number.." type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-required="true" >
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>More Information</legend>
+                    <label for="country" aria-label="Select country of Location to the bookstore">Country:</label>
+                    <select id="country" name="country">
+                        <option aria-label="Finland" value="finland">Finland</option>
+                        <option aria-label="Canada" value="canada">Canada</option>
+                        <option aria-label="United States"  value="usa">USA</option>
+                        <option aria-label="Sweden"  value="sweden">Sweden</option>
+                    </select>
+                    <label for="subject">Message:</label>
+                    <textarea id="subject" aria-label="Write your message" name="subject" placeholder="Write something.." style="height:200px" aria-required="true"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
         </div>
+        
     </section>
 
     <footer id="universalFooter"></footer>

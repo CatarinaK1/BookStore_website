@@ -22,36 +22,36 @@
 </head>
 
 
-<body>
+<body>              
     
     <!-- Header content goes here -->
     <header id="universalHeader"></header>
     
     <section class = "headerImageSection">
-        <img class="HeaderImage" alt="HeaderImage" src="./Include/Reading.jpg">  
+        <img class="HeaderImage" alt="HeaderImage" src="./Include/Reading.jpg"  role="figure">  
         <!-- <div class="decorative-rectangle"></div> -->
     </section>
 
-    <section class = "CollectionSection">
+    <section class = "CollectionSection" role="region" aria-label="Our Collection">
         <div class = "Collection">
             <div class="CollectionImage-Container">
-                <img alt="CollectionBooksImage" id="CollectionBooksImage" src="./Include/BannerBookCollection.png"> 
+                <img alt="Image of Books  in Collection " id="CollectionBooksImage" src="./Include/BannerBookCollection.png" role="figure" > 
             </div>
-            <div class="CollectionText-Container">
+            <div class="CollectionText-Container" tabindex="0">
                 <h2>Our Collection</h2>
                 <!-- <p>Explore the literary wonders awaiting you in our collection.
                 Embark on a journey through the captivating pages of our book selection.
                 Embark on a literary journey  -->
                 <p> Explore the treasures within the pages of our diverse book collection.
                 </p>
-                <button>Collection</button>
+                <button onclick="window.location.href='./books.html'">Collection</button>
             </div>
 
       </div>
     </section>
-    <section class="AboutSection">
+    <section class="AboutSection" role="region" aria-label="About Us Section">
         <div class="AboutGrid">
-            <div class = "About">
+            <div class = "About" tabindex="0">
                 <h2>Nurturing Minds, One Book at a Time</h2>
                 <!-- <div class="about-decorative-rectangle"></div> -->
                 <p>Welcome to our Bookstore, we are on a mission to cultivate a love for literature, ignite cultural curiosity, 
@@ -62,86 +62,84 @@
                     </p>
             </div>
             <div class="DrawingReading">
-                <img alt="DrawingReading" src="./Include/StudentStudying.png">  
+                <img alt="A drawing of a young person reading a book" src="./Include/StudentStudying.png">  
             </div>
         </div>
     </section>
 
 
 
-    <section class = "Top-picks-Section">
-        <div class="Top-picks-text">
+    <section class = "Top-picks-Section" role="region" aria-label="Top-picks-Section">
+        <div class="Top-picks-text" tabindex="0">
             <h2>This Month's Top Picks</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio aperiam commodi </p>
         </div>
 
-        <div class="Top-picks-books">
-            <div class="book">
-                <img src="./Include/book1.jpg" alt="Book1">
+        <div class="Top-picks-books" tabindex="0" aria-label="List of the most popular books" >
+            <div class="book" tabindex="0" role="listitem" aria-label="Lord of the Rings by J.R.R Tolkien">
+                <img src="./Include/book1.jpg" alt="Book 1" role="presentation">
                 <h3>Lord of the Rings</h3>
-                <p>J.R.R Tolkien</p>
+                <p>J.R.R Tolkien</p>            
  
             </div>
             
-            <div class="book">
-                <img src="./Include/book11.jpg" alt="Book2">
+            <div class="book" tabindex="0" role="listitem" aria-label="The Adventures of the Blue Carbuncle">
+                <img src="./Include/book11.jpg" alt="Book 2" role="presentation">
                 <h3>The Adventures of the Blue Carbuncle</h3>
                 <p>Arthur Conan Doyle</p>
             </div>
 
-            <div class="book">
-                <img src="./Include/book3.jpg" alt="Book3">
+            <div class="book" tabindex="0" role="listitem" aria-label="Learn openGL - Graphics Programming">
+                <img src="./Include/book3.jpg" alt="Book 3" role="presentation">
                 <h3>Learn openGL - Graphics Programming</h3>
                 <p>Joey de Vries</p>
             </div>
 
-            <div class="book">
-                <img src="./Include/book18.jpg" alt="Book4">
+            <div class="book" tabindex="0" role="listitem" aria-label="Remembrance of Things Past">
+                <img src="./Include/book18.jpg" alt="Book 4" role="presentation">
                 <h3>Remembrance of Things Past</h3>
                 <p>Marcel Proust</p>
             </div>
 
-            <div class="book">
-                <img src="./Include/book7.jpg" alt="Book5">
+            <div class="book" tabindex="0" role="listitem" aria-label="The Phantom of the Opera">
+                <img src="./Include/book7.jpg" alt="Book 5" role="presentation">
                 <h3>The Phantom of the Opera</h3>
                 <p>Gaton Leroux</p>
             </div>
         </div>
 
-
-
         </div>
     </section>
 
-    <section class="Visit-us-Section">
-        <div class="bookstore-visit-text">
+    <section class="Visit-us-Section" role="region" aria-label="Visit us Section">
+        <div class="bookstore-visit-text" tabindex="0">
             <h2>Visit us at</h2>
             <p> Cougar Street 25B <br>
                 Helsinki 002200 <br>
-                Open : Ma - La 9-20.
+                Open : Monday - Saturday 9-20.
             </p>
-            <button>Contact</button>
+            <button onclick="window.location.href='./contact.html'">Contact</button>
             
         </div>
         <div class="bookstore-visit-image">
-            <img src="./Include/bookstoreInterior.jpg" alt="BookstoreInterior">
+            <img src="./Include/bookstoreInterior.jpg" alt="An image illustrating the interior of the Bookstore" role="figure" aria-labelledby="the interior of the Bookstore">
         </div>
     </section>
     
 
-    <section class = "Contact-Us-Section">
+    <section class = "Contact-Us-Section" role="region" aria-label="Contact Us">
         <div class="Contact-Us-Grid">
             <div class="Contact-Grid-Image">
-                <img alt="Contact-Image" src="./Include/Online-Conversation.png">  
+                <img alt="Contact-Image" src="./Include/Online-Conversation.png" role="presentation">  
             </div>
             
-            <div class = "Contact-text">
+            <div class = "Contact-text" tabindex="0">
                 <h2>Contact Us</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam urna purus <br>
                     ornare vitae blandit vitae, tincidunt vitae leo.
                 </p>
-                <button>Contact</button>
+                <button onclick="window.location.href='./contact.html'">Contact</button>
             </div>
 
         </div>
@@ -151,6 +149,6 @@
 
 
 
-    <footer id="universalFooter"></footer>
+    <footer id="universalFooter" role="contentinfo"></footer>
 </body>
 </html>
